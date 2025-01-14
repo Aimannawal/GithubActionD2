@@ -46,3 +46,4 @@ jobs:
           super_secret: ${{ secrets.NAMA_LENGKAP }}
         env: # Or as an environment variable
           super_secret: ${{ secrets.NAMA_LENGKAP }}
+        run: echo $super_secret
