@@ -1,3 +1,3 @@
-nama = "Aiman Wafi'i An Nawal"
+nama = "Aiman"
 
 print(nama)
