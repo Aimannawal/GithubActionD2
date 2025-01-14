@@ -42,4 +42,4 @@ jobs:
         run: python nama.py
 
       - name: Secret Variable
-         run: echo ${{ secrets.Nama_Lengkap }}
+         run: echo "${{ secrets.Nama_Lengkap }}"
