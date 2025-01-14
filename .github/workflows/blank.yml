@@ -43,5 +43,4 @@ jobs:
 
       - name: Secret Variable
          env: 
-          NAMA: ${{ secrets.NAMA_LENGKAP }}
-          run: echo "$NAMA"
+         run: echo "${{ secrets.NAMA_LENGKAP }}"
