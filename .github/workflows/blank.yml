@@ -42,8 +42,6 @@ jobs:
         run: python nama.py
 
       - name: Secret Variable
-        with: # Set the secret as an input
-          super_secret: ${{ secrets.NAMA_LENGKAP }}
-        env: # Or as an environment variable
-          super_secret: ${{ secrets.NAMA_LENGKAP }}
-        run: echo $super_secret
+        env:
+          NAMA: ${{ secrets.NAMA_LENGKAP }}
+        run: echo "$NAMA"
